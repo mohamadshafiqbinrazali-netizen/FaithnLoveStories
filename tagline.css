@@ -1,0 +1,23 @@
+.hero h1{
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content:center;
+  font-size:clamp(78px,12.2vw,188px);
+  line-height:.76;
+}
+.hero h1 span{display:block}
+.hero h1 i{
+  position:static;
+  font-size:clamp(48px,7vw,108px);
+  line-height:1;
+  margin-top:.16em;
+  margin-left:24vw;
+}
+@media(max-width:1000px){
+  .hero h1{font-size:14vw}
+}
+@media(max-width:640px){
+  .hero h1{display:flex;align-items:flex-start;font-size:20vw;line-height:.78}
+  .hero h1 i{position:static;align-self:flex-end;font-size:14vw;margin:10px 0 0}
+}
